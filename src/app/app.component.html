@@ -1,0 +1,13 @@
+<header class = "header">
+<h1>My project for SBD</h1>
+</header>
+<nav>
+  <a routerLink="/main" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">Main menu</a>
+  <a routerLink="/table" routerLinkActive="active">Table</a>
+  <a routerLink="/personal" routerLinkActive="active">Personal card</a>
+  <a routerLink="/examples" routerLinkActive="active">Examples</a>
+</nav>
+
+<div class="contents">
+  <router-outlet> </router-outlet>
+</div>

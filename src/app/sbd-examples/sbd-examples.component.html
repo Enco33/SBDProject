@@ -1,0 +1,47 @@
+
+<button (click)="changeDisable()">Disable</button>
+
+<button *ngIf="disable" (click)="changeNameSec()">SecDisable</button>
+<button [disabled]="disable" (click)="changeName()">ThirdDisable</button>
+<h1>{{name}}</h1>
+<!-- <header class = "header">
+  <h1>Welcome to the Main page</h1>
+  <h1>This is project by Igor Deyneko</h1>
+  <br>  {{title}}
+  <br>Input your first name: <input type="text" [(ngModel)]="name">
+  <br>Input your last name: <input type="text" [(ngModel)]="lastname">
+
+  <p></p>Hello, {{name}} {{lastname}} glad to see you!
+</header>
+<body>
+
+<br>First moment
+<div *ngFor="let moment of moments">
+  {{moment}}
+</div>
+<app-time #time></app-time>
+<button (click)="addMoment(time.hour, time.min, time.sec)">PushMoment</button>
+
+<br>
+<div *ngIf="moments.length==0">There are no moments...</div>
+<div *ngFor="let moment of moments">
+  {{moment}}
+</div>
+
+<br>
+<div *ngFor ="let moment of moments; index as i">
+  {{moment}} <button (click)="deleteMoment(i)">Delete</button>
+</div>
+
+<app-notes ></app-notes>
+
+</body>
+
+<section>
+  <h1>Place for my task</h1>
+  <br> Input Table name: <input type="text" [(ngModel)]="tabname">
+  <br>{{tabname}}
+  <br>Click button to make string
+  <br><button (click)="addString()">Make string</button>
+  <br>Click button to delete string
+</section> -->

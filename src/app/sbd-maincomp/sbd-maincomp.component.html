@@ -1,0 +1,15 @@
+<p>Welcome to the {{title}}</p>
+<h1>This is project by Igor Deyneko</h1>
+<br>Input your first name: <input type="text" [(ngModel)]="name">
+<br>Input your last name: <input type="text" [(ngModel)]="lastname">
+
+<p></p>Hello, {{name}} {{lastname}} glad to see you!
+
+<app-time #time></app-time>
+<button (click)="addMoment(time.hour, time.min, time.sec)">Push Button</button>
+
+<br>
+<div *ngIf="mymoments.length==0">There are no moments...</div>
+<div *ngFor="let moment of mymoments">
+  {{moment}}
+</div>

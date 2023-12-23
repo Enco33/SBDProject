@@ -1,0 +1,15 @@
+.header {
+  background-color: #462861;
+  color: yellow;
+  padding: 20px;
+}
+
+.example-form {
+  min-width: 100px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
